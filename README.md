@@ -16,6 +16,7 @@
 - Sistema de sesión con redirección automática
 - Página de login, registro y dashboard
 - Protección para rutas privadas/públicas
+- Variables de entorno con `.env` (sin librerías)
 
 ---
 
@@ -36,6 +37,7 @@
 ├── public/
 │   └── css/
 ├── connection.php
+├── env.php
 ├── db.sql
 ├── functions.php
 ├── home.php
