@@ -40,7 +40,6 @@
 ├── env.php
 ├── db.sql
 ├── functions.php
-├── home.php
 ├── index.php
 ├── login.php
 ├── logout.php

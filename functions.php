@@ -17,7 +17,14 @@ function is_logged_in($con)
 	if (isset($_SESSION['user_id'])) {
 		$user_id = $_SESSION['user_id'];
 
+		if (!$con) {
+			return false;
+		}
+
 		$stmt = mysqli_prepare($con, "SELECT 1 FROM usuarios WHERE user_id = ? LIMIT 1");
+		if (!$stmt)
+			return false;
+
 		mysqli_stmt_bind_param($stmt, "s", $user_id);
 		mysqli_stmt_execute($stmt);
 		$result = mysqli_stmt_get_result($stmt);
@@ -27,6 +34,7 @@ function is_logged_in($con)
 
 	return false;
 }
+
 
 function get_user_data($con, $user_id)
 {

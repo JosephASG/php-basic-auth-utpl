@@ -8,7 +8,7 @@ include("connection.php");
 include("functions.php");
 
 if (is_logged_in($con)) {
-	header("Location: index.php");
+	header("Location: dashboard.php");
 	exit;
 }
 
@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <body class="w-screen h-screen flex flex-col items-center justify-between bg-[#070707]">
 	<!-- Botón de regreso al home -->
 	<div class="absolute top-4 left-4">
-		<a href="home.php"
+		<a href="index.php"
 			class="text-white hover:text-gray-300 transition-colors duration-300 flex items-center gap-2">
 			<i class="fa-solid fa-arrow-left"></i>
 			<span>Regresar al inicio</span>
