@@ -4,7 +4,7 @@
 
 > Sistema básico de autenticación de usuarios en PHP puro, con conexión a base de datos MySQL y sin frameworks externos.
 
-![preview](/public/preview.png)
+![preview](./public/img/preview.png)
 
 ---
 
