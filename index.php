@@ -31,7 +31,8 @@ if (isset($_SESSION['user_id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="./public/favicon.svg" />
     <link rel="shortcut icon" href="./public/favicon.ico" />
-    <title>Inicio - UTPL</title>
+    <title>Basic Auth PHP by Joseph Santamaria</title>
+    <meta name="description" content="Un sistema de autenticación básico en PHP hecho por Joseph Santamaria.">
     <link rel="stylesheet" href="./public/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/4a4a9dcee8.js" crossorigin="anonymous"></script>
@@ -43,7 +44,7 @@ if (isset($_SESSION['user_id'])) {
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center">
                 <img src="./public/img/utpl.png" alt="UTPL Logo" class="h-8 mr-3">
-                <h1 class="text-white text-xl font-bold">UTPL</h1>
+                <span class="text-white text-xl font-bold">UTPL</span>
             </div>
             <div class="flex items-center space-x-4">
                 <?php if (isset($user_data)): ?>
@@ -83,11 +84,11 @@ if (isset($_SESSION['user_id'])) {
                 <span class="text-white">x</span>
                 <img src="./public/img/utpl.png" alt="UTPL Logo" class="h-16">
             </div>
-            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                 Basic Auth PHP
-            </h2>
+            </h1>
             <p class="text-white/70 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
-                Un sistema de autenticación básico en PHP.
+                Un sistema de autenticación básico en PHP by Joseph Santamaria.
             </p>
             <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                 <a href="signup.php"
@@ -103,7 +104,7 @@ if (isset($_SESSION['user_id'])) {
     </section>
 
     <!-- Footer -->
-    <footer class="w-full py-4 px-6 text-center absolute bottom-0">
+    <footer class="w-full py-4 px-6 text-center absolute bottom-0 max-md:bottom-4">
         <div class="container mx-auto">
             <div class="text-white/50 text-sm mb-2">
                 &copy; 2025 BAP by Joseph Santamaria. Todos los derechos reservados.

@@ -58,7 +58,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/svg+xml" href="./public/favicon.svg" />
 	<link rel="shortcut icon" href="./public/favicon.ico" />
-	<title>Login - UTPL</title>
+	<title>Login - Basic Auth PHP by Joseph Santamaria</title>
+	<meta name="description" content="Login Page de usuario del sistema de autenticación básico en PHP.">
 	<link rel="stylesheet" href="./public/css/style.css">
 	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 	<script src="https://kit.fontawesome.com/4a4a9dcee8.js" crossorigin="anonymous"></script>
@@ -80,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 	<!-- Contenedor principal -->
 	<div class="flex-grow flex items-center justify-center w-full">
-		<div id="box" class="w-[20%] p-">
+		<div id="box" class="w-[20%] max-md:w-[90%]">
 			<?php if (!empty($error_message)): ?>
 				<div class="text-red-500 bg-red-100 border border-red-300 px-4 py-2 rounded mb-6">
 					<?= $error_message ?>
@@ -137,7 +138,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	</div>
 
 	<!-- Footer -->
-	<footer class="w-full py-4 px-6 text-center absolute bottom-0">
+	<footer class="w-full py-4 px-6 text-center absolute bottom-0 max-md:bottom-4">
 		<div class="container mx-auto">
 			<div class="text-white/50 text-sm mb-2">
 				&copy; 2025 BAP by Joseph Santamaria. Todos los derechos reservados.

@@ -2,6 +2,13 @@
 
 body,
 html {
-    font-size: 0.8vw !important;
+    font-size: 3.2vw !important;
     font-family: 'Inter', sans-serif;
+}
+
+@media not all and (max-width: 768px) {
+    html,
+    body {
+        font-size: 0.8vw !important;
+    }
 }

@@ -6,10 +6,10 @@
 // esto se encuentra en el archivo db.sql
 
 // Variables del Environment de Desarrollo - Descomentar para usar en local
-// $dbhost = "localhost";
-// $dbuser = "root";
-// $dbpass = "";
-// $dbname = "utpl_db";
+$dbhost = "localhost";
+$dbuser = "root";
+$dbpass = "";
+$dbname = "utpl_db";
 
 // Variables del Environment de Producción/Local - Descomentar para usar en producción o en local
 // Estas variables también pueden ser usadas localmente si se desea para 
@@ -21,15 +21,15 @@
 // $dbname = "utpl_db";
 
 // Cargar el archivo de configuración del entorno si existe (.env)
-if (file_exists(__DIR__ . '/env.php')) {
-	include "env.php";
-	load_env(); // solo en local
-}
+// if (file_exists(__DIR__ . '/env.php')) {
+// 	include "env.php";
+// 	load_env(); // solo en local
+// }
 
-$dbhost = getenv("DB_HOST");
-$dbuser = getenv("DB_USER");
-$dbpass = getenv("DB_PASS");
-$dbname = getenv("DB_NAME");
+// $dbhost = getenv("DB_HOST");
+// $dbuser = getenv("DB_USER");
+// $dbpass = getenv("DB_PASS");
+// $dbname = getenv("DB_NAME");
 
 if (!$con = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname)) {
 	die("failed to connect!");
